@@ -1,0 +1,68 @@
+.signinpage{
+    position: relative;
+    top: 18%;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 40%;
+    height: 70%;
+    border: 2px white solid;
+    border-radius: 10px;
+    backdrop-filter: blur(1px); /* Applies the blur effect */
+    -webkit-backdrop-filter: blur(1px); 
+}
+.form-control{
+    background-color: transparent;
+    border-radius: 25px;
+    border: 2px rgb(255, 255, 255) solid;
+    height: 45px;
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: blur(20px);
+}
+.From{
+    width: 70%;
+}
+.Input{
+    display: flex; flex-direction: column; gap: 20px;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: -17.2rem;
+    position: relative;
+    top: 100%;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-section {
+    margin: 10px;
+}
+
+.footer-payment img {
+    height: 30px;
+    margin: 5px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    height: 70px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+

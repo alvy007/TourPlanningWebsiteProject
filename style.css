@@ -1,0 +1,397 @@
+bod html {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    min-height: 100vh; 
+    font-family: serif;
+  }
+  body{
+    background-image: url(image/cover3.jpg);
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 90vh; /* Ensures the background covers the entire height of the viewport */
+    margin: 0;
+    background-size: 100%;
+    
+  }
+  #navbar{
+    background-color: transparent;
+    transition: background-color 0.5s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: 0.5s ease-in-out;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.9rem;
+  }
+  #signin{
+    border-radius: 5px;
+    padding: 0;
+  }
+  #navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95); /* White when scrolled */
+    /* You can also add other styles if needed, like box-shadow or slightly different padding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border: none;
+  }
+
+.navbar-toggler-icon{
+    filter: none; /* Reset any existing filter */
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  #navbar a{
+    color: black;
+  }
+
+.navbar-brand{
+    /* font-family: 'Pacifico'; */
+    font-family: 'Lobster', cursive;;
+    position: relative;
+    top: 4px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #014b01, #1d7e12cd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+article{
+    
+    width: 50%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 5%;
+
+      
+}
+
+
+
+
+article p{
+    color: rgb(255, 255, 255);
+    
+}
+
+#nav-item{
+    width: 86%;
+    height: 3.5rem;
+    
+    
+}
+#sign{
+    border-radius: 5px;
+}  
+.input-group{
+    margin-top:108px;
+    
+}
+.from-control{
+    width: 35%;
+    height: 3rem;
+    border-radius: 25px;
+}
+#hero{
+    position: relative;
+    top: 400px;
+    margin: auto;
+    height: 3rem;
+    margin-bottom:10px;
+}
+#hero h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 12px;
+
+    
+}
+
+#searchbar{
+    height: 3rem;
+   
+    
+}
+#searchbar input{
+    color: white;
+    border-radius:2rem;
+    background-color: transparent; /* Transparent background */
+    backdrop-filter: blur(10px); /* Applies the blur effect */
+    -webkit-backdrop-filter: blur(1px); 
+    opacity: 0.7;
+    border: 2px solid #fffffff0; /* Solid blue border */
+    outline: none; /* Remove default focus outline */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    
+}
+#searchbar input::placeholder{
+        color: #ffffffc5; /* Blue color for placeholder text */
+        font-size: 16px; /* Same as input text size */
+        font-weight: normal; /* Make placeholder bold */
+        opacity: 1; /* Fully visible placeholder text */
+  
+}
+
+#searchbar button{
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+    border-radius: 2rem;
+    position: absolute;
+    right: 15px;
+    margin-top: 6px;
+
+}
+#searchbar button:hover{
+    background-color: #0a0a0aca;
+    border: 1px solid black;
+   
+    
+}
+from button{
+    width: 20px;
+    
+}
+.service{
+    width: 100%;
+    height: 300px;
+    background-color:white;
+    border-radius: 10px;
+     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+#card{
+    display: flex;
+    position: relative;
+    top: 70px;
+}
+
+#Hero{
+    display: flex;
+    position: relative;
+    top: 280px;
+    border-radius: 10px;
+    
+    
+}
+#Hero h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+#Navbar{
+    background-color: rgba(255, 255, 255, 1);
+}
+#underline{
+    margin: auto;
+    width: 12rem;
+    height: 2px;
+    background-color: black;
+}
+.row{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: auto;
+}
+.col{
+
+    width: 15%;
+    height: 30px;
+}
+#Hero ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+   
+}
+#Hero li{
+
+    list-style: none;
+    
+    width: 30%;
+    height: 100%;
+    background-color: rgb(232, 232, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10px;
+}
+@media(max-width:1200px){
+    #Hero li{
+        height: 150%;
+    }
+}
+.vip-card{
+    box-shadow:  3px 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.card-text{
+    position: relative;
+    top: 15px;
+}
+.Button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+.package{
+    background-color: rgb(232, 232, 230);
+    height: 400px;
+}
+/* Package decomandation  */
+
+#cardCarousel{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 9%;
+}
+#footer-up-image{
+    position: relative;
+    top: 10rem;
+    
+}
+#footer-up-image img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+  
+.package-card {
+    flex: 0 0 300px;
+    transition: transform 0.3s, opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+  }
+  .package-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .package-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+  }
+  
+  .package-card.active {
+    z-index: 10;
+    opacity: 1;
+  } 
+  .package-card:not(.active) {
+    opacity: 0.9;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     /* Adjust color and opacity here */
+    mix-blend-mode: multiply; /* Optional: Blend with the image */
+    pointer-events: none; /* Ensures the overlay doesn’t block interactions */
+  }
+  
+ /* Package decomandation end */
+ 
+
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: -17.2rem;
+    position: relative;
+    top: 100%;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-section {
+    margin: 10px;
+}
+
+.footer-payment img {
+    height: 30px;
+    margin: 5px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    height: 70px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+    @media (max-width: 780px){
+        article{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            position: relative;
+            margin-top: 50px;
+    
+        }
+        #Hero{
+            margin-top: -100px;
+        }
+        body{
+            height: 65vh;
+        }
+        #hero{
+            display: none;
+        }
+
+       
+        
+        @media(max-width:560px){
+            #Hero{
+                margin-top: -130px;
+            }
+            
+        }
+    }
+    @media(max-width:975px){
+        #navbar{
+            background-color: hsla(0, 0%, 100%, 0.951);
+          }
+          article{
+            width: 100%;
+            height: 200px;
+
+          }
+          
+
+    }
+    
+
+
+

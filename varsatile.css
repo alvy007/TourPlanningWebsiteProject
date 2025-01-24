@@ -1,0 +1,50 @@
+body{
+    background-image: url(packages_imgae/shyllet.jpg);
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 90vh; /* Ensures the background covers the entire height of the viewport */
+    margin: 0;
+    background-size: 160%;
+    
+  }
+  #navbar{
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.5s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: 0.5s ease-in-out;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.9rem;
+  }
+  #signin{
+    border-radius: 5px;
+    padding: 0;
+  }
+  #navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95); /* White when scrolled */
+    /* You can also add other styles if needed, like box-shadow or slightly different padding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border: none;
+  }
+
+.navbar-toggler-icon{
+    filter: none; /* Reset any existing filter */
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  #navbar a{
+    color: black;
+  }
+
+.navbar-brand{
+    /* font-family: 'Pacifico'; */
+    font-family: 'Lobster', cursive;;
+    position: relative;
+    top: 4px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #014b01, #1d7e12cd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+

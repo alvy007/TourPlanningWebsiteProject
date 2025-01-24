@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pothik-Login</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://res.cloudinary.com/gwatco/image/upload/dpr_auto/t_image-card/f_auto/v1735689600/new-website/static/homepage/global-travel-cover/banner.webp') no-repeat center center/cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      /* Dark overlay for readability */
+      z-index: -1;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.8);
+      /* Semi-transparent background */
+      padding: 30px;
+      border-radius: 15px;
+      width: 400px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #333;
+
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .login-button:hover {
+      background-color: #0056b3;
+    }
+
+    .footer-text {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .footer-text a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+
+    .centered-text {
+      text-align: center;
+      /* Centers the text inside the div */
+      font-size: 13px;
+      margin-bottom: 20px;
+      color: #3e4041;
+      /* Text color */
+      line-height: 1;
+      font-weight: 200;
+      font-weight: bold;
+    }
+
+    .start-text {
+      margin-top: 100;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <div class="login-container">
+    <h2>Login To Pothik</h2>
+    <h6 class="centered-text">Explore the wonders of our planet until your last breath</h6>
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="login-button">Login</button>
+    </form>
+    <div class="footer-text">
+      Don't have an account? <a href="signup.html">Sign Up</a>
+    </div>
+  </div>
+</body>
+
+</html>

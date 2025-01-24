@@ -1,0 +1,288 @@
+/* Full screen layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f7f9fc;
+}
+
+.header-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.landscape-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.container {
+  max-width: 1200px; /* Max width for the container */
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+}
+/* Booking Summary Styles with Modern Look */
+.bill-summary {
+  flex: 0 0 40%;
+  background: #f9fafb; /* Soft background color */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for modern feel */
+  font-family: 'Arial', sans-serif;
+}
+
+.summary-title {
+  font-size: 1.8em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.individual-costs p {
+  font-size: 1.1em;
+  color: #555;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.individual-costs .icon {
+  margin-right: 10px;
+  font-size: 1.4em;
+  color: #007bff; /* Color for icons */
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 1.1em;
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: 600;
+  color: #555;
+  flex: 1;
+}
+
+.value {
+  font-weight: 500;
+  color: #333;
+  text-align: right;
+  flex: 1;
+}
+
+.total-cost {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.total-cost p {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.total-button {
+  padding: 15px 30px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.total-button:hover {
+  background-color: #218838;
+}
+
+#booking-details {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.summary-item i {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .bill-summary {
+    padding: 15px;
+  }
+
+  .summary-title {
+    font-size: 1.4em;
+  }
+
+  .summary-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .label {
+    font-size: 1em;
+  }
+
+  .value {
+    font-size: 1.2em;
+  }
+}
+
+.bill-summary:hover {
+  transform: scale(1.02);
+}
+
+.payment-form {
+  flex: 0 0 55%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.payment-title {
+  font-size: 1.5em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.summary-title {
+  font-size: 1.6em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.payment-form:hover {
+  transform: scale(1.02);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+/* Payment Method Specific Styles */
+#card-details,
+#mobile-payment-details {
+  display: none;
+}
+input:focus,
+select:focus,
+button:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Visibility of Fields Based on Payment Method */
+#card-details {
+  display: block; /* Card details are shown by default */
+}
+
+#mobile-payment-details {
+  display: none;
+}
+
+#mobile-payment-details .form-group input {
+  padding: 12px;
+  font-size: 1em;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .payment-form {
+    flex: 1 0 100%;
+  }
+}
+@media (max-width: 768px) {
+  .payment-form {
+    padding: 15px;
+  }
+
+  .payment-title {
+    font-size: 1.4em;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 1em;
+  }
+
+  button {
+    font-size: 1.2em;
+  }
+}
